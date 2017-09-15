@@ -3,7 +3,7 @@ package lab_3.individual_lab;
 import kareltherobot.*;
 import java.awt.Color;
 
-public class Problem3 extends Robot
+public class Problem3 extends Problem2
 {
    
     /**
@@ -15,7 +15,26 @@ public class Problem3 extends Robot
     }
 
     public void carpetRooms(){
-        
+        nextRoom();
+        checkSurrounded();
+    }
+    public void checkSurrounded() {
+        if (checkLeft() && checkRight() && checkTop()) {
+            putBeeper();
+        }
+        faceSouth();
+        turnLeft();
+        turnLeft();
+        if (frontIsClear()) {
+            move();
+            checkSurrounded();
+        }
+        else {
+            faceSouth();
+            move();
+            turnLeft();
+            carpetRooms();
+        }
     }
 }
 

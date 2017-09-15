@@ -1,4 +1,19 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ setPins()
-numComments=1
+comment0.target=Problem1
+comment1.params=
+comment1.target=void\ setPins()
+comment2.params=
+comment2.target=void\ setBackRow()
+comment3.params=
+comment3.target=void\ setBackMiddleRow()
+comment4.params=
+comment4.target=void\ setFrontMiddleRow()
+comment5.params=
+comment5.target=void\ setFrontRow()
+comment6.params=
+comment6.target=void\ reposition()
+comment7.params=
+comment7.target=void\ turnRight()
+comment8.params=
+comment8.target=void\ putPin()
+numComments=9
